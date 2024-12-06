@@ -1,0 +1,90 @@
+/* z-index demonstartion css*/
+.z {
+    width: 400px;
+    aspect-ratio: 1/1;
+    background-color: #ccc;
+    display: inline-block;
+    position: relative;
+}
+
+#a{
+    background-color: red;
+    border: 5px dashed black;
+    z-index: 1;
+}
+
+#b{
+    background-color: blue;
+    border: 5px solid black;
+    right: 200px;
+    z-index: 2;
+}
+
+#c{
+    background-color: yellow;
+    border: dotted black;
+    right: 400px;
+    z-index: -1;
+}
+
+#a:hover, #b:hover{
+    z-index: 2;
+}
+
+/* Float Pratice */
+
+.f {
+    width: 60%;
+    min-height: 60vh;
+    background-color: #ccc;
+    float: left;
+}
+
+#d{
+    background-color: orange;
+    width: 20%;
+}
+
+#e{
+    background-color: green;
+}
+
+#f{
+    background-color: violet;
+    width: 20%;
+
+}
+
+header, footer{
+    min-height: 20vh;
+    background-color: #252525;
+    clear: both;
+}
+
+main{
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    #d, #e, #f{
+        width: 100%;    
+    }
+}
+
+/* Clearfix Pool */
+#pool {
+    background-color: #ccccff;
+    border: 10px solid #774400;
+    width: 30%;
+    overflow: auto; /*clearfix property to make sure overflowing floated elements fit in the pool*/
+}
+
+#ring{
+    background-color: #ccccff;
+    border: 30px solid #ff7700;
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    float: right;
+}
